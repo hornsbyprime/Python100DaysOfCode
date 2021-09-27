@@ -27,16 +27,11 @@ scissors = '''
 ---.__(___)
 '''
 
-
 choice = int(input('What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.'))
-
 options = [rock, paper, scissors]
-
 cpuChoice = random.randint(0, 2)
 
-
 print(f'\nYour choice:\n{options[choice]}')
-
 print(f'\nCPUs choice:\n{options[cpuChoice]}')
 
 if choice >= 3 or choice < 0:
