@@ -28,10 +28,8 @@ print("Your mission is to find the treasure.")
 way = input('While traversing a forrest you come to a fork in the road. Do you go left or right?').lower()
 if way == 'left':
   cross = input('You follow the left path and after several hours arrive at a large river. Next to the path is a dock for mooring boats. how do you attemt to cross swim or wait?').lower()
-
   if cross == 'wait':
     door = input('You sit on a bench and close your eyes listening to the beautiful meolodies of the local songbirds. Before long between the breaks in the songs of birds,the sounds of oars breaking the surface of the water can be heard. The boat captain pulls up to the dock and offers to ferry you across the mighty river. Once across the river you follow along the path until a clearing opens. In the middle of the clearing stands a building containing three doors. Which door do you choose to enter. Red, Yellow, or BLue?').lower()
-
     if door == 'red':
       print('You spring a booby trap and are engulfed in flame, burning to a crisp. You lose.')
     elif door == 'blue':
@@ -44,4 +42,3 @@ if way == 'left':
     print('The river looks calm and you wade in thinking yourself to cool to wait for the likes of a lowly boat captain. However your hubris will be your undoing as the calm looking river has a deadly under current. Shortly after entering the current pulls you deeper and deeper into the murky depths. You struggle valiantly to reach the surface but the river cares not for your will to live. The river and the boat captain are actually good friends, and the river does not take kindly to your disrespect. Your body is never found and no one really care because most people thought you were a douche anyway. You lose.')
 else:
   print('Your walk down the right path for a few hours when out of nowhere an arrow comes flying and strikes you in the knee. Your adventuring career is over. You lose.')  
-
