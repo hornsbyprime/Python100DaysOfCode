@@ -31,18 +31,19 @@ choice = int(input('What do you choose? Type 0 for Rock, 1 for Paper or 2 for Sc
 options = [rock, paper, scissors]
 cpuChoice = random.randint(0, 2)
 
-print(f'\nYour choice:\n{options[choice]}')
-print(f'\nCPUs choice:\n{options[cpuChoice]}')
-
 if choice >= 3 or choice < 0:
   print('Invalid input. You Lose.')
-elif choice == 0 and cpuChoice == 2:
-  print('You Win!')
-elif cpuChoice == 0 and choice == 2:
-  print('You Lose')
-elif cpuChoice > choice:
-  print('You Lose.')
-elif choice > cpuChoice:
-  print('You Win!') 
-elif choice == cpuChoice:
-  print('It\'s a Draw.')
+else:
+  print(f'\nYour choice:\n{options[choice]}')
+  print(f'\nCPUs choice:\n{options[cpuChoice]}')
+
+  if choice == 0 and cpuChoice == 2:
+    print('You Win!')
+  elif cpuChoice == 0 and choice == 2:
+    print('You Lose')
+  elif cpuChoice > choice:
+    print('You Lose.')
+  elif choice > cpuChoice:
+    print('You Win!') 
+  elif choice == cpuChoice:
+    print('It\'s a Draw.')
